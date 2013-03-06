@@ -158,7 +158,7 @@ Growler = Class.create({
 		options = options || {};
 		Object.extend(opt, options);
 		opt.header = opt.header || title;
-		var n = this.createNotice(this.growler, msg, opt);
+		var n = this.createNotice( msg, opt);
 		n.setStyle({ backgroundColor: background, color: color });
 		return n;
 	},
